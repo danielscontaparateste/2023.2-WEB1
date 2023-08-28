@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <fieldset> 
+            <legend>Dados pessoais</legend>
+            <label for="iptNome">Nome: </label>
+            <input type="text" id="iptNome" name="iptNNome"><br>
+            <label for="iptEnd">Endereço: </label>
+            <input type="text" id="iptEnd" name="iptNEnd"><br>
+            <label for="iptCor">Cor favorita: </label>
+            <input type="color" id="iptCor" name="iptNCor"><br>
+            <label for="iptDataNasc">Data de Nascimento: </label>
+            <input type="date" id="iptDataNasc" name="iptNDataNasc"><br>
+
+            <br>
+
+            <label for="sltEscolaridade">Escolaridade: </label>
+            <select name="sltNEscolaridade" id="sltEscolaridade">
+                <option value="1">Ensino Fundamental</option>
+                <option value="2">Ensino Médio</option>
+                <option value="3">Ensino Superior</option>
+            </select>
+
+            <br><br>
+            <label for="ttaComentarios">Comentários</label>
+            <textarea rows="6" cols="50" name="ttaNComentarios" id="ttaComentarios"></textarea>
+
+        </fieldset>
+    </form>
+</body>
+</html>
