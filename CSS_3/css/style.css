@@ -1,0 +1,63 @@
+/* a {
+    font-size: 300%;
+} */
+
+* { 
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    background-color: yellow;
+}
+
+.estados{
+    text-decoration: underline;
+}
+
+.info{
+    /* border: 3px solid black; */
+    border-top: 3px solid red;
+    border-right: 3px dotted green;
+    border-bottom: 5px double blue;
+    border-left: 1px dashed purple;
+    border-top-right-radius: 30px;
+
+    height: 200px;
+    text-align: center;
+    /* margin-bottom: 15px; */
+    /* margin: 0px 0px 15px 15px; */
+    margin: 15px; /*margin: 15px 15px 15px 15px; */
+}
+
+#infoCampus{
+    width: 50%;
+    overflow: scroll;
+    text-align: left;
+    padding-left: 50px;
+}
+
+#infoCursos{
+    width: 500px;
+    background-color: yellow;
+    border-radius: 50px;
+}
+
+#infoSelecao{
+    width: 500px;
+    background-color: lightcyan;
+    border-radius: 50px;    
+}
+

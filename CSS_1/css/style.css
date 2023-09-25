@@ -1,0 +1,44 @@
+body {
+    /* background-color: rgb(168, 166, 222); */
+    background-color: rgb(200, 193, 193);
+    background-image: url("../imagens/ifce.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+h1, h2{
+    text-transform: uppercase; 
+    color: white; 
+    background-color: black;  
+}
+
+p {
+    /* font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: normal;
+    font-style: italic;
+    font-weight: bold; */
+    /* As instruções acima podem ser sintetizadas a instrução seguinte */
+    font: italic normal normal 200% 'Times New Roman', Times, serif;
+
+    /* text-transform: uppercase;  */
+    /* text-transform: capitalize; */
+    /* text-transform: lowercase; */
+    /* text-transform: none;
+    text-decoration:line-through; */
+    /* text-align: center; */
+    /* text-align:right; */
+    text-align: justify;
+
+    text-indent: 50px;
+
+    /* letter-spacing: 3px; */
+
+    
+}

@@ -1,0 +1,31 @@
+body {
+    background-color:antiquewhite;
+    font-size: 200%;
+}
+
+#tituloLista {
+    font-weight:bold;
+}
+
+span.primeiraPalavraEstado{
+    text-decoration: underline;
+    /* text-transform: uppercase; */
+    /* color: black; */
+}
+
+li.visitado{
+    color: green;
+}
+
+.naoVisitado{
+    color: red;
+    
+}
+
+.definido{
+    font-style: italic;
+}
+
+.indefinido{
+    font-size: 50%;
+}
