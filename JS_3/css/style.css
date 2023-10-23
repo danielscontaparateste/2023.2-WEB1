@@ -1,0 +1,17 @@
+.label_num{
+    width: 20px;
+    padding: 5px;
+    display: inline-block;
+    /* border: 1px solid black; */
+}
+
+
+#bxResp{
+    width: 200px;
+    height: 100px;
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+    border: 1px solid black;
+    background-color: gray;
+}

@@ -1,0 +1,11 @@
+#divStatus{
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+}
+
+#respStatus{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
