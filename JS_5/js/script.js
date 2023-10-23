@@ -20,12 +20,24 @@
 
 function gerar(){
     var qtd = parseInt(document.getElementById("iptQtd").value);
+    var bttGerar = document.getElementById("bttGerar");
 
     for (let k=0; k<qtd; k++){
         const spnResp = document.createElement("span");
         spnResp.setAttribute("class","mensagem");
-        spnResp.innerHTML = "Daniel Silva";
+        spnResp.innerHTML = "Programação Web";
         document.querySelector("body").appendChild(spnResp);
     }
 
+    bttGerar.disabled = true;
+
 }
+
+function apagar(){
+    var bttGerar = document.getElementById("bttGerar");
+    bttGerar.disabled = false;
+
+    document.getElementById("iptQtd").value = "";
+}
+
+// Modifique o código para a função "apagar" remover também as mensagens geradas.
