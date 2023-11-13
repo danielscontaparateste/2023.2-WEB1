@@ -16,3 +16,14 @@
     width: 50px;
     display: inline-block;
 }
+
+.errou{
+    display: block;
+    color: red;
+}
+
+.acertou{
+    display: block;
+    color: green;
+    font-weight: bold;
+}

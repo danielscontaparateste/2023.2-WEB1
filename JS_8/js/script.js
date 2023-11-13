@@ -13,13 +13,16 @@ function loadDefault(){
 }
 
 function iniciarJogo(){
+
+    this.disabled = true;
     
     const qtdBlocos = parseInt(document.getElementById("iptQtd").value);
+    
 
     // Gerar o número sorteado
     numeroSorteado = Math.floor( Math.random() * qtdBlocos);
 
-    // console.log(numeroSorteado);
+    console.log(numeroSorteado);
 
     // Criar o container para os blocos
     const container = document.createElement("div");
@@ -29,17 +32,29 @@ function iniciarJogo(){
     for (let k=0; k<qtdBlocos; k++){
         var bloco = document.createElement("div");
         bloco.setAttribute("class","box");
-        bloco.textContent = k+1;
+        bloco.textContent = k;
+        bloco.addEventListener("click", function (){
+            // alert(this.textContent);
+            const msg = document.createElement("span");
+            if (parseInt(this.textContent) == numeroSorteado){
+                msg.setAttribute("class","acertou");
+                msg.textContent = "Parabéns, você acertou o número sorteado.";
+            }else {
+                msg.setAttribute("class","errou");
+                msg.textContent = "Infelizmente, você não acertou!.";
+                this.remove();
+            }
+            container.appendChild(msg);
+        } );
+        
         container.appendChild(bloco);
     }
 
     document.querySelector("body").appendChild(container);
 
-
-
-
 }
 
 
-// Exercício: Continuar o código para atender o solicitado na questão. 
+
+// Exercício: Implementar a finalização do jogo: quando o usuário acertar o número sorteado, ele deve travar todos os botões e aparecer um para reiniciar. 
 
