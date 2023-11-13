@@ -29,6 +29,7 @@ function iniciarJogo(){
     for (let k=0; k<qtdBlocos; k++){
         var bloco = document.createElement("div");
         bloco.setAttribute("class","box");
+        bloco.textContent = k+1;
         container.appendChild(bloco);
     }
 
